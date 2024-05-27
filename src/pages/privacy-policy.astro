@@ -1,0 +1,57 @@
+---
+import '../styles/main.css';
+
+const heading = 'Scripture Golf';
+const subheading = 'Privacy Policy';
+const appIcon = '/images/app-icon.svg';
+const pageTitle = 'Scripture Golf';
+const favicon = '/images/favicon.svg';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href={favicon} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <div class="container privacy">
+      <main>
+        <div class="text-container">
+          <div class="left-side">
+            <img src={appIcon} class="app-icon" />
+            <h1 class="heading">{heading}</h1>
+            <h2 class="subheading">{subheading}</h2>
+            <a class="app-link" href="/">Home</a>
+          </div>
+          <div class="right-side">
+            <h3>Personal Information</h3>
+            <p>
+              We are committed to ensuring your privacy and the security of your
+              personal information. Our application does not store any of your
+              personal information on servers, as we do not utilize servers to
+              store data. Consequently, there is no risk of your personal
+              information being stored or shared with third parties. Rest assured,
+              even if we had the capability, we would never share your personal
+              information without your explicit consent.
+            </p>
+
+            <h3>Use of Information</h3>
+            <p>
+              Our application does not collect any information from you.
+              Therefore, we are unable to use any information, as none is
+              collected or stored. Your privacy is fully protected and guaranteed
+              by our design.
+            </p>
+            <p>
+              If you have any questions or concerns regarding our privacy
+              practices, please feel free to contact us.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
