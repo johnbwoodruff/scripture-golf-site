@@ -159,4 +159,9 @@ footer {
   .footer-image {
     top: 5px;
   }
+
+  .privacy .text-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
